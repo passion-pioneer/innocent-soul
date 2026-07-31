@@ -834,6 +834,7 @@ AI에서는 이것을 매우 단순하게 표현합니다.
       ↓
 
 출력층(Output Layer)
+
 입력층(Input Layer)
 
 데이터가 들어오는 곳입니다.
@@ -1143,7 +1144,6 @@ Module 1. AI Foundation
 제4강. Transformer - AI 혁명의 시작
 
 이번 강의는 NCA-AIIO에서 가장 중요한 개념 중 하나입니다.
-
 오늘날 GPT, Claude, Gemini, Llama, DeepSeek, Qwen 등 대부분의 최신 LLM은 모두 Transformer를 기반으로 만들어졌습니다.
 
 학습 목표
@@ -1155,16 +1155,12 @@ Transformer는 왜 등장했는가?
 Self-Attention이란 무엇인가?
 Transformer가 GPU와 왜 잘 맞는가?
 AI 인프라 엔지니어가 Transformer를 이해해야 하는 이유는 무엇인가?
+
 1. Transformer 이전의 AI
-
 2017년 이전에는 자연어 처리(NLP)에서 주로 RNN(Recurrent Neural Network)과 LSTM(Long Short-Term Memory)이 사용되었습니다.
-
 이 모델들은 문장을 한 단어씩 순서대로 처리했습니다.
-
 예를 들어,
-
 "나는 오늘 아침에 커피를 마셨다."
-
 RNN은 다음과 같이 처리합니다.
 
 나는
@@ -1184,47 +1180,31 @@ RNN은 다음과 같이 처리합니다.
 2. RNN의 문제점
 
 긴 문장을 생각해 보겠습니다.
-
 "어제 친구와 함께 바다에 갔다가 저녁에 돌아와서 피곤했지만 오늘 아침 일찍 출근했다."
-
 RNN은 마지막 단어인 "출근했다"를 이해하려면 앞의 모든 단어를 차례대로 거쳐야 합니다.
-
 문장이 길어질수록
-
 앞부분 정보를 잊어버리기 쉽고
 학습 속도가 느려지며
 GPU 병렬 처리가 어렵습니다.
-
 이것을 Long-Term Dependency Problem(장기 의존성 문제)이라고 합니다.
 
 3. Transformer의 등장
 
 2017년 Google 연구진은 유명한 논문을 발표합니다.
-
 Attention Is All You Need
-
 이 논문에서 처음으로 Transformer 구조가 제안되었습니다.
-
 Transformer의 핵심 아이디어는 매우 단순합니다.
-
 "굳이 순서대로 읽지 말고, 모든 단어를 동시에 보고 중요한 관계만 찾자."
-
 이것이 AI 발전의 큰 전환점이었습니다.
 
 4. Self-Attention이란?
 
 Transformer의 핵심은 Self-Attention입니다.
-
 예를 들어,
-
 "철수는 사과를 먹었다. 그는 배가 고팠다."
-
 여기서
-
 "그는"이 누구인지 이해하려면
-
 AI는 앞 문장의 "철수"를 참고해야 합니다.
-
 Transformer는 문장의 모든 단어가 서로를 참고합니다.
 
 철수  ←→  그는
@@ -1236,27 +1216,18 @@ Transformer는 문장의 모든 단어가 서로를 참고합니다.
 즉,
 
 각 단어가
-
 "나와 가장 관련 있는 단어가 무엇인가?"
-
 를 계산합니다.
-
 이 과정을 Attention이라고 합니다.
 
 5. 왜 "Self" Attention인가?
 
 Attention에는 여러 종류가 있습니다.
-
 Self-Attention은
-
 자기 자신의 문장 안에서 관계를 찾는 것
-
 입니다.
-
 예를 들어
-
 고양이는 생선을 좋아한다.
-
 Transformer는
 
 "고양이"
@@ -1301,53 +1272,33 @@ Transformer는
 여기서 NCA-AIIO와 연결됩니다.
 
 Transformer는
-
 수많은 행렬(Matrix) 연산을 수행합니다.
-
 예를 들어
-
 문장이 1,000개의 토큰이라면
-
 수백만~수천만 번의 행렬 연산이 발생할 수 있습니다.
-
 하지만
-
 이 연산들은 대부분 동시에 수행할 수 있습니다.
-
 GPU는
-
 수천 개의 코어가
-
 이 행렬 연산을 병렬 처리합니다.
-
 그래서
-
 Transformer는 GPU 성능을 매우 잘 활용합니다.
 
 8. 왜 NVIDIA가 AI 시대를 주도하게 되었을까?
 
 Transformer 이전에는
-
 CPU만으로도 어느 정도 학습이 가능했습니다.
-
 Transformer 이후에는
-
 GPU 없이는
-
 거대한 모델을 현실적인 시간 안에 학습하기 어려워졌습니다.
-
 그래서
-
 NVIDIA는
-
 단순 GPU 제조사가 아니라
-
 AI 컴퓨팅 플랫폼 기업이 되었습니다.
 
 9. Transformer와 AI 인프라
 
 Transformer 모델이 커질수록
-
 필요한 것이 급격히 증가합니다.
 
 더 큰 모델
@@ -1373,13 +1324,11 @@ Transformer 모델이 커질수록
 더 빠른 네트워크
 
 이것이
-
 AI Infrastructure가 중요한 이유입니다.
 
 10. Transformer 이후 등장한 기술들
 
 Transformer를 기반으로
-
 수많은 AI 모델이 등장했습니다.
 
 Transformer
@@ -1405,19 +1354,12 @@ Transformer
 11. AI 인프라 엔지니어 관점
 
 당신은 앞으로
-
 GPU 서버를 운영한다고 가정해봅시다.
-
 사용자가
-
 "GPT를 학습하고 싶습니다."
-
 라고 요청하면
-
 당신은
-
 모델을 만드는 것이 아니라
-
 다음을 제공합니다.
 
 GPU Cluster
@@ -1430,15 +1372,12 @@ Storage
 Monitoring
 
 즉,
-
 Transformer가 잘 돌아갈 수 있는 환경을 만드는 것이 역할입니다.
 
 실무 연결
 
 이전에 Kubernetes에서 GPU Device Plugin과 Time Slicing을 다뤘던 경험을 떠올려 보세요.
-
 그것은 GPU 자원을 Pod에 할당하는 단계였습니다.
-
 하지만 Transformer 기반 모델을 여러 GPU에 분산 학습하려면 그 다음 단계가 필요합니다.
 
 Pod
@@ -1738,11 +1677,8 @@ LLM 완성
 즉,
 
 GPU는
-
 Transformer를
-
 수천~수만 번이 아니라
-
 수조 번 실행합니다.
 
 6. 왜 GPU가 수천 장 필요한가?
@@ -1888,17 +1824,11 @@ GPU	매우 많이 사용	서비스 규모에 따라 조정
 9. AI 인프라 엔지니어의 역할
 
 AI 연구자는
-
 모델를 개발합니다.
-
 AI 인프라 엔지니어는
-
 모델이 학습되고 서비스될 환경을 제공합니다.
-
 예를 들어
-
 LLM 학습을 위해
-
 다음을 설계합니다.
 
 GPU
@@ -1928,20 +1858,15 @@ Kubernetes
 Monitoring
 
 즉,
-
 LLM을 직접 만드는 것이 아니라
-
 LLM이 최고의 성능을 낼 수 있는 환경을 구축하는 사람입니다.
 
 실무 연결
 
 당신은 Kubernetes에서 GPU Device Plugin과 Time Slicing을 다뤄본 경험이 있습니다.
-
 여기서 한 단계 더 나아가면,
-
 학습 클러스터에서는 여러 GPU를 하나의 작업(Job)에 묶어 사용합니다.
 추론 클러스터에서는 많은 사용자의 요청을 빠르게 처리하도록 GPU를 효율적으로 분배합니다.
-
 이때 CUDA, NCCL, 고속 네트워크, 스케줄링 정책이 전체 성능을 좌우합니다.
 
 핵심 정리
