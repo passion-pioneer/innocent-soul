@@ -28,7 +28,7 @@
 | b088-kr-dmz-vpc      | b088-kr-dmz-sbn-waflb    | Public  | 10.217.48.0/24  |
 |                      | b088-kr-dmz-sbn-waf1     | Private | 10.217.49.0/24  |
 |                      | b088-kr-dmz-sbn-waf2     | Private | 10.217.50.0/24  |
-|                      | b088-kr-dmz-sbn-lb       | Private | 10.217.51.0/24  | proxy alb
+|                      | b088-kr-dmz-sbn-lb       | Private | 10.217.51.0/24  | 
 |                      | b088-kr-dmz-sbn-web1     | Private | 10.217.52.0/24  |
 |                      | b088-kr-dmz-sbn-web2     | Private | 10.217.53.0/24  |
 |                      | b088-kr-dmz-sbn-devlb    | Private | 10.217.54.0/24  |
@@ -36,9 +36,9 @@
 |                      | b088-kr-dmz-sbn-px       | Public  | 10.217.56.0/24  | proxy server
 |                      | b088-kr-dmz-sbn-devpx    | Public  | 10.217.57.0/24  | 
 | b088-kr-sfc-vpc      | b088-kr-sfc-sbn-lb       | Private | 10.217.80.0/23  |
-|                      | b088-kr-sfc-sbn-mgmt     | Public  | 10.217.82.0/23  |
-|                      | b088-kr-sfc-sbn-ips      | Private | 10.217.84.0/23  |
-|                      | b088-kr-sfc-sbn-vtg      | Private | 10.217.86.0/23  |
+|                      | b088-kr-sfc-sbn-mgmt     | Private | 10.217.82.0/23  |
+|                      | b088-kr-sfc-sbn-ips      | Public  | 10.217.84.0/23  |
+|                      | b088-kr-sfc-sbn-vtg      | Public  | 10.217.86.0/23  |
 | b088-krs-drdmz-vpc   | b088-krs-drdmz-sbn-waflb | Public  | 10.217.112.0/23 |
 |                      | b088-krs-drdmz-sbn-waf   | Private | 10.217.114.0/23 |
 |                      | b088-krs-drdmz-sbn-lb    | Private | 10.217.116.0/23 |
@@ -49,9 +49,9 @@
 |                      | b088-krs-dr-sbn-db       | Private | 10.217.134.0/23 |
 |                      | b088-krs-dr-sbn-mgmt     | Private | 10.217.136.0/23 |
 | b088-krs-dr-sfc-vpc  | b088-krs-dr-sfc-sbn-lb   | Private | 10.217.144.0/23 |
-|                      | b088-krs-dr-sfc-sbn-mgmt | Public  | 10.217.146.0/23 |
-|                      | b088-krs-dr-sfc-sbn-ips  | Private | 10.217.148.0/23 |
-|                      | b088-krs-dr-sfc-sbn-vtg  | Private | 10.217.150.0/23 |
+|                      | b088-krs-dr-sfc-sbn-mgmt | Private | 10.217.146.0/23 |
+|                      | b088-krs-dr-sfc-sbn-ips  | Public  | 10.217.148.0/23 |
+|                      | b088-krs-dr-sfc-sbn-vtg  | Public  | 10.217.150.0/23 |
 
 ## Domain
 | 업무 | 운영구분 | 프론트          | 도메인명               | IP_1          |
