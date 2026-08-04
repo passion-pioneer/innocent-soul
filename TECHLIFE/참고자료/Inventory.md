@@ -1,14 +1,14 @@
 ## VPC
-| VPC Name             | IP CIDR         |  |
-|----------------------|-----------------|--|
-| b088-kr-prd-vpc      | 10.217.0.0/20   |  |
-| b088-kr-dev-vpc      | 10.217.16.0/20  |  |
-| b088-kr-mgmt-vpc     | 10.217.32.0/20  |  |
-| b088-kr-dmz-vpc      | 10.217.48.0/20  |  |
-| b088-kr-sfc-vpc      | 10.217.80.0/20  |  |
-| b088-krs-dr-dmz-vpc  | 10.217.112.0/20 |  |
-| b088-krs-dr-serv-vpc | 10.217.128.0/20 |  |
-| b088-krs-sfc-vpc     | 10.217.144.0/20 |  |
+| VPC Name             | IP CIDR         | 
+|----------------------|-----------------| 
+| b088-kr-prd-vpc      | 10.217.0.0/20   | 
+| b088-kr-dev-vpc      | 10.217.16.0/20  | 
+| b088-kr-mgmt-vpc     | 10.217.32.0/20  | 
+| b088-kr-dmz-vpc      | 10.217.48.0/20  | 
+| b088-kr-sfc-vpc      | 10.217.80.0/20  | 
+| b088-krs-dr-dmz-vpc  | 10.217.112.0/20 | 
+| b088-krs-dr-serv-vpc | 10.217.128.0/20 | 
+| b088-krs-sfc-vpc     | 10.217.144.0/20 | 
 
 ## Subnet
 | vpc                  | Subnet                   | Type    | IP Range        |
@@ -35,6 +35,7 @@
 |                      | b088-kr-dmz-sbn-devweb   | Private | 10.217.55.0/24  |
 |                      | b088-kr-dmz-sbn-px       | Public  | 10.217.56.0/24  | proxy server
 |                      | b088-kr-dmz-sbn-devpx    | Public  | 10.217.57.0/24  | 
+|                      |                          |         | 10.217.58.0/24  | bastion server
 | b088-kr-sfc-vpc      | b088-kr-sfc-sbn-lb       | Private | 10.217.80.0/23  |
 |                      | b088-kr-sfc-sbn-mgmt     | Private | 10.217.82.0/23  |
 |                      | b088-kr-sfc-sbn-ips      | Public  | 10.217.84.0/23  |
